@@ -1,0 +1,60 @@
+.block-clock {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: relative;
+  margin: 100px auto; }
+  .block-clock:before {
+    content: " ";
+    width: 22px;
+    background: #4b9aaa;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    height: 22px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1; }
+  .block-clock .arrow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    border-radius: 7px;
+    width: 7px;
+    transform-origin: 50% 100%;
+    margin: auto;
+    -webkit-animation-name: round;
+            animation-name: round;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
+  .block-clock .minute-arr {
+    height: 70px;
+    background: #d15559;
+    -webkit-animation-duration: 3600s;
+            animation-duration: 3600s; }
+  .block-clock .second-arr {
+    background: #4b9aaa;
+    height: 150px;
+    -webkit-animation-duration: 60s;
+            animation-duration: 60s; }
+
+@-webkit-keyframes round {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes round {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=main.css.map */
